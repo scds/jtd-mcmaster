@@ -1,6 +1,10 @@
 # Porting/verifying old workshops from the forked just-the-docs to the new jtd-mcmaster
 
-## Lessons [OPTIONAL]
+## General
+- Verify all pages have a nav_order.
+
+
+## Lessons
 - Move any lessons to a lessons folder.
 - Verify links within markdown still work.
 
@@ -14,20 +18,19 @@ Remove \_layouts folder.
 Remove \includes folder.
 
 ## config.yml
-
-- Update config.yml
+- Update config.yml. Template is below.
 ```yml
-title: Workshop Name # *** Enter workshop title here 
-github_repo_url: "https://scds.github.io/scds-template/" # *** Enter workshop URL (in github pages) here
-gh_edit_repository: "https://github.com/scds/scds-template" # *** Enter the github URL for your repo
-ga_tracking: "" # *** This needs to be set up in Google Analytics once you know the website URL (ask Jay to do this). Then the tracking code needs to be taken from Google Analytics and pasted here.  
+title: How-To and Documentation # *** Enter workshop title here 
+github_repo_url: "https://github.com/scds/jtd-mcmaster" # ***Enter workshop URL (in github pages) here
+gh_edit_repository: "https://github.com/scds/jtd-mcmaster" #*** ENTER the github URL for your repo
+ga_tracking: # *** This needs to be set up in Google Analytics once you know the website URL (ask Jay to do this). Then the tracking code needs to be taken from Google Analytics and pasted here.  
 
 # DMDS Settings
-subtitle: "This workshop is part of the SCDS Do More with Digital Scholarship series."
-nav_footer_logo_bottom: "https://raw.githubusercontent.com/scds/jtd-mcmaster/main/assets/images/scds-logo.png"
-nav_footer_logo_bottom_href: "https://scds.ca/"
-nav_footer_logo_top: ""
-nav_footer_logo_top_href: ""
+# subtitle: "This workshop is part of the SCDS Do More with Digital Scholarship series."
+# nav_footer_logo_bottom: "https://raw.githubusercontent.com/scds/jtd-mcmaster/main/assets/images/scds-logo.png"
+# nav_footer_logo_bottom_href: "https://scds.ca/"
+# nav_footer_logo_top: ""
+# nav_footer_logo_top_href: ""
 
 # DASH settings
 # subtitle: 'This workshop is part of the Data Analysis Support Hub series.'
@@ -37,11 +40,11 @@ nav_footer_logo_top_href: ""
 # nav_footer_logo_top_href: "https://library.mcmaster.ca/services/dash"
 
 # OTHER settings - Override series specific settings
-# subtitle: "This workshop is part of the __ series."
-# nav_footer_logo_bottom: "https://raw.githubusercontent.com/scds/jtd-mcmaster/main/assets/images/scds-logo.png"
-# nav_footer_logo_bottom_href: "https://scds.ca/"
-# nav_footer_logo_top: ""
-# nav_footer_logo_top_href: ""
+subtitle: ""
+nav_footer_logo_bottom: "https://raw.githubusercontent.com/scds/jtd-mcmaster/main/assets/images/scds-logo.png"
+nav_footer_logo_bottom_href: "https://scds.ca/"
+nav_footer_logo_top: ""
+nav_footer_logo_top_href: ""
 
 #  _____       _   _   _          _      _                            
 # | ____|   __| | (_) | |_       / \    | |__     ___   __   __   ___ 
@@ -49,6 +52,11 @@ nav_footer_logo_top_href: ""
 # | |___  | (_| | | | | |_     / ___ \  | |_) | | (_) |  \ V /  |  __/
 # |_____|  \__,_| |_|  \__|   /_/   \_\ |_.__/   \___/    \_/    \___|
 
+aux_links:
+  "SCDS Workshops":
+    - "https://scds.ca/online-learning/"
+
+navigation: true
 
 # Override Default SCDS Web Icon
 favicon_ico: ""
@@ -67,7 +75,7 @@ heading_anchors: true
 back_to_top: true
 back_to_top_text: "Back to top"
 
-# Removed by Richie - Requires manual updating. Automatic updating alternative is done in footer_custom.html.
+# Footer last edited timestamp
 # Footer last edited timestamp
 # last_edit_timestamp: true # show or hide edit time - page must have `last_modified_date` defined in the frontmatter
 # last_edit_time_format: "%b %e %Y at %I:%M %p" # uses ruby's time format: https://ruby-doc.org/stdlib-2.7.0/libdoc/time/rdoc/Time.html
@@ -82,6 +90,7 @@ gh_edit_view_mode: "tree" # "tree" or "edit" if you want the user to jump into t
 plugins:
   - jekyll-remote-theme
   - jekyll-seo-tag
+  - jekyll-relative-links
 
 # Google Analytics Tracking
 ga_tracking_anonymize_ip: true # Use GDPR compliant Google Analytics settings (true by default)
