@@ -354,6 +354,21 @@ Warning!
 
 ***
 <!-- -------------------------------------------------- -->
+# Inline Math Equations
+<div class="code-example" markdown="1">
+
+$f(x) = 2 x + 1$
+$\int_{-2}^2 \phi(z) dz$
+
+</div>
+
+```md
+$f(x) = 2 x + 1$
+$\int_{-2}^2 \phi(z) dz$
+```
+Convert your math equation to as TeX commands and surround it with $ signs.
+***
+<!-- -------------------------------------------------- -->
 
 # Embeds
 <iframe width="100%" height="416" allowfullscreen frameborder=0 src="https://echo360.ca/media/a65689c0-c35c-4f33-9c12-f0ac97883f54/public?autoplay=false&automute=false"></iframe>
