@@ -365,8 +365,12 @@ $\int_{-2}^2 \phi(z) dz$
 ```md
 $f(x) = 2 x + 1$
 $\int_{-2}^2 \phi(z) dz$
+
+\\[f(x; a, b) = \frac{x^{(a - 1)} (1 - x)^{(b - 1)}}
+    {\int_0^1 u^{(a - 1)} (1 - u)^{(b - 1)} du}
+    \qquad (0 \leq x \leq 1)\\]
 ```
-Convert your math equation to as TeX commands and surround it with $ signs.
+$**TeX Command Equation**$ for **inline** equations. \\[**TeX Command Equation**\\] for centered equation.
 ***
 <!-- -------------------------------------------------- -->
 
