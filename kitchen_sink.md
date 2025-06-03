@@ -354,7 +354,7 @@ Warning!
 
 ***
 <!-- -------------------------------------------------- -->
-# Inline Math Equations
+# Math Equations
 <div class="code-example" markdown="1">
 
 $f(x) = 2 x + 1$
