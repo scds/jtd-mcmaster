@@ -2,6 +2,8 @@
 
 .side-bar {
   z-index: 0;
+  width: 100%;
+  position: fixed;
   display: flex;
   flex-wrap: wrap;
   background-color: $sidebar-color;
@@ -42,7 +44,7 @@
 .main-content-wrap {
   @include container;
 
-  padding-top: $gutter-spacing-sm;
+  padding-top: 5rem;
   padding-bottom: $gutter-spacing-sm;
 
   @include mq(md) {
