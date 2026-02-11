@@ -229,3 +229,49 @@ body {
   width: 1em;
   vertical-align: text-top;
 }
+
+
+//CSS Settings for Flipping Images
+.flip-box {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.flipcard {
+    position: relative;
+    cursor: pointer;
+}
+
+.flipcard img,
+.flipcard p {
+    backface-visibility: hidden;
+    transition: all .5s;
+}
+
+.flipcard img {
+    display: block;
+    width: 100%;
+}
+
+.flipcard p {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 29px 44px;
+    background-color: #0d5d78;
+    color: #fff;
+    text-align: center;
+    transform: rotateY(-180deg);
+}
+
+.flipcard.flipped img {
+    transform: rotateY(180deg);
+    opacity: 0;
+}
+
+.flipcard.flipped p {
+    transform: rotateY(0);
+}
