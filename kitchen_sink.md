@@ -350,8 +350,33 @@ Warning!
 <!-- Try and use relative widths (percentages). 100% is the full width of the content area. -->
 ```
 
+## Image Tile Flip
+# Image Quiz Tester
+<div class="flip-box">
+    <div class="flipcard" onclick="this.classList.toggle('flipped')">
+        <img src="https://picsum.photos/id/237/400" alt="">
+        <p>Right answer!</p>
+    </div>
+    <div class="flipcard" onclick="this.classList.toggle('flipped')">
+        <img src="https://picsum.photos/id/237/400" alt="">
+        <p>Wrong answer!</p>
+    </div>
+</div>
 </div>
 
+```md
+<div class="flip-box">
+    <div class="flipcard" onclick="this.classList.toggle('flipped')">
+        <img src="https://picsum.photos/id/237/400" alt="">
+        <p>Right answer!</p>
+    </div>
+    <div class="flipcard" onclick="this.classList.toggle('flipped')">
+        <img src="https://picsum.photos/id/237/400" alt="">
+        <p>Wrong answer!</p>
+    </div>
+</div>
+</div>
+```
 ***
 <!-- -------------------------------------------------- -->
 # Math Equations
