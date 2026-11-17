@@ -1,0 +1,104 @@
+/* SCDS-inspired colour palette */
+:root {
+  --scds-burgundy: #7A003C;
+  --scds-light: #F5F5F5;
+  --scds-text: #333333;
+}
+
+/* Top navigation bar */
+.top-navigation {
+  background-color: var(--scds-burgundy);
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  border-bottom: 4px solid var(--scds-burgundy);
+  position: relative;
+  z-index: 100;
+}
+
+/* Navigation list */
+.top-navigation-list {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  list-style: none;
+  margin: 0;
+  padding: 0 2rem;
+  gap: 0.5rem;
+}
+
+/* Individual navigation items */
+.top-navigation-item a {
+  display: block;
+  padding: 1rem 1.25rem;
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 0.95rem;
+}
+
+/* Hover effect */
+.top-navigation-item a:hover {
+  background-color: rgba(255, 255, 255, 0.12);
+  text-decoration: none;
+}
+
+/* Current page */
+.top-navigation-item a[aria-current="page"] {
+  border-bottom: 3px solid white;
+}
+
+/* Main content footer */
+.scds-footer {
+  margin-top: -2rem;
+  margin-left: -2rem;
+  margin-right: -2rem;
+  margin-bottom: -2rem;
+  padding: 1.5rem;
+  border-top: 2px solid var(--scds-burgundy);
+  color: white;
+  background-color: var(--scds-burgundy);
+  font-size: 0.9rem;
+  line-height: 1.7;
+}
+
+/* Footer links */
+.scds-footer a {
+  color: white;
+  text-decoration: underline;
+}
+
+.main-content .scds-footer p.github-footer-link,
+.main-content .scds-footer p.github-footer-link a,
+.main-content .scds-footer p.github-footer-link a:hover {
+  font-size: 0.675rem !important;
+  line-height: 1.5 !important;
+  font-weight: normal !important;
+}
+
+/* Account for the top navigation */
+@media (min-width: 768px) {
+  /*
+  .side-bar {
+    top: 70px;
+    height: calc(100vh - 70px);
+  */
+  
+  .main {
+    margin-top: 0px;
+  }
+}
+
+
+
+/* Sidebar footer 
+.side-bar .site-footer {
+  background-color: var(--scds-burgundy);
+  color: var(--scds-white);
+  padding: 1rem;
+  border-top: 3px solid var(--scds-burgundy);
+}
+
+.side-bar .site-footer a {
+  color: var(--scds-white);
+}*/

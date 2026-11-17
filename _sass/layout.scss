@@ -3,7 +3,7 @@
 .side-bar {
   z-index: 40;
   width: 100%;
-  position: fixed;
+  position: relative;
   display: flex;
   flex-wrap: wrap;
   background-color: $sidebar-color;

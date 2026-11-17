@@ -36,3 +36,6 @@ gem "http_parser.rb", "~> 0.6.0", :platforms => [:jruby]
 gem "jekyll-remote-theme"
 gem "rake"
 gem 'jekyll-relative-links'
+gem "csv", "~> 3.3"
+
+gem "base64", "~> 0.3.0"
